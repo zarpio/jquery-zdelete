@@ -5,7 +5,7 @@ The jQuery zdelete Plugin provides fade-in and slide effects for your existing d
 
 ## Getting Started
 
-Include jQuery at the top and then zdelete plugin. Then select a form to validate and call the `validate` method.
+Include jQuery at the top and then zdelete plugin.
 
 ```html
 
