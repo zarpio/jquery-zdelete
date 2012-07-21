@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>myPlugin1</title>
+	<style type="text/css">
+	body{
+		font-family: Arial, "MS Trebuchet", sans-serif;
+	}
+	#container li{
+		width: 400px;
+		background: #ccc;
+		height: 100px;
+		margin: 4px;
+	}
+	.zremove{
+		text-decoration: none;
+		color: red;
+		float: right;
+		padding: 10px;
+	}
+	</style>
+</head>
+<body>
+
+	<div id="container">
+		<ul>
+			<li class="zelement"><a href="#">element one</a><a href="#" class="zremove">X</a></li>
+			<li class="zelement"><a href="#">element two</a><a href="#" class="zremove">X</a></li>
+			<li class="zelement"><a href="#">element three</a><a href="#" class="zremove">X</a></li>
+		</ul>
+	</div>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="zdelete.jquery.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("ul").zdelete();
+	});
+	</script>
+</body>
+</html>
