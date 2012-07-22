@@ -25,18 +25,34 @@
 
 	<div id="container">
 		<ul>
-			<li class="zelement"><a href="#">element one</a><a href="#" class="zremove">X</a></li>
 			<li class="zelement"><a href="#">element two</a><a href="#" class="zremove">X</a></li>
+			<li class="zelement"><a href="#">element one</a><a href="#" class="zremove">X</a></li>
 			<li class="zelement"><a href="#">element three</a><a href="#" class="zremove">X</a></li>
 		</ul>
 	</div>
 
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="zdelete.jquery.js"></script>
+
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../js/jquery-1.7.2.min.js">\x3C/script>')</script>
+	<!-- jQuery zdelete Plugin -->
+	<script type="text/javascript" src="../js/zdelete.jquery.js"></script>
 	<script type="text/javascript">
 	$(function(){
+		// With default options with fade effect
 		$("ul").zdelete();
+
+
+		// OR 
+		// you can pass options like this
+		/*
+		$("ul").zdelete({
+			mode : 'slide'
+		});
+		*/
 	});
+
+
 	</script>
 </body>
 </html>
